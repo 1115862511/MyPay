@@ -7,17 +7,17 @@
   function getUA(){
    return navigator.userAgent;
   }
-  alipayURL="https://qr.alipay.com/fkx075663m1dtheufohz256.png";//从支付宝收款二维码里得到的URL
+  alipayURL="https://qr.alipay.com/fkx075663m1dtheufohz256";//从支付宝收款二维码里得到的URL
   wechat = "MicroMessenger";
   alipay = "AlipayClient";
   qq = "QQ";
   userAgent = getUA();
   if(userAgent.indexOf(wechat)!=-1){
    //微信
-   window.location.href="mm_facetoface_collect_qrcode_1543422789402.png"
+   window.location.href="wechat.png"
   }else if(userAgent.indexOf(qq)!=-1){
    //QQ
-   window.location.href="qrcode_20181129003328.png"
+   window.location.href="qq.png"
   }else if(userAgent.indexOf(alipay)!=-1){
    //支付宝
    window.location.href=alipayURL;
